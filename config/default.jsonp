@@ -1,0 +1,443 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.rulers": [
+      {
+        "color": "#58535321",
+        "column": 65
+      },
+      {
+        "column": 80
+      }
+    ]
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.rulers": [
+      80
+    ],
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 80
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.tabSize": 4
+  },
+  "[python]": {
+    "editor.rulers": [
+      79
+    ],
+    "editor.tabSize": 4
+  },
+  "accessibility.verbosity.notebook": false,
+  "debug.console.closeOnEnd": true,
+  "debug.toolBarLocation": "commandCenter",
+  "diffEditor.diffAlgorithm": "advanced",
+  "diffEditor.maxComputationTime": 30000,
+  "diffEditor.renderSideBySideInlineBreakpoint": 1000,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.colorDecoratorsActivatedOn": "click",
+  "editor.cursorSurroundingLines": 3,
+  "editor.detectIndentation": true,
+  "editor.experimental.asyncTokenization": true,
+  "editor.fastScrollSensitivity": 5,
+  "editor.find.autoFindInSelection": "multiline",
+  // https://github.com/microsoft/cascadia-code
+  // https://github.com/ryanoasis/nerd-fonts/releases/latest#:~:text=CascadiaCode.zip
+  // https://monaspace.githubnext.com
+  // https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip?WT.mc_id=-blog-scottha
+  // Caskaydia Cove Nerd Font Complete
+  // Neon Argon Xenon Radon Krypton
+  "editor.fontFamily": "'Cascadia Mono', 'Monaspace Neon', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontLigatures": "'calt', 'liga', 'dlig', 'onum', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
+  "editor.fontSize": 14,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.largeFileOptimizations": true,
+  "editor.linkedEditing": true,
+  "editor.matchBrackets": "always",
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.scale": 1,
+  "editor.minimap.side": "right",
+  "editor.mouseWheelScrollSensitivity": 1,
+  "editor.occurrencesHighlight": "multiFile",
+  "editor.overviewRulerBorder": true,
+  "editor.quickSuggestions": {
+    "comments": "inline",
+    "strings": "inline"
+  },
+  "editor.renderFinalNewline": "on",
+  "editor.renderLineHighlight": "line",
+  "editor.renderLineHighlightOnlyWhenFocus": false,
+  "editor.renderWhitespace": "selection",
+  "editor.rulers": [
+    80
+  ],
+  "editor.scrollbar.verticalScrollbarSize": 10,
+  "editor.scrollBeyondLastLine": true,
+  "editor.selectionHighlight": true,
+  "editor.smoothScrolling": false,
+  "editor.stickyTabStops": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.suggest.localityBonus": true,
+  "editor.suggest.preview": true,
+  "editor.suggest.showDeprecated": false,
+  "editor.suggest.showStatusBar": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.unicodeHighlight.includeStrings": false,
+  "editor.unicodeHighlight.invisibleCharacters": true,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.wordWrap": "bounded",
+  "editor.wrappingStrategy": "advanced",
+  "emmet.showSuggestionsAsSnippets": false,
+  "explorer.autoRevealExclude": {
+    "**/bower_components": true,
+    "**/node_modules": true
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmUndo": "default",
+  "explorer.copyRelativePathSeparator": "auto",
+  "explorer.decorations.badges": false,
+  "explorer.enableDragAndDrop": true,
+  "explorer.enableUndo": true,
+  "explorer.excludeGitIgnore": false,
+  "explorer.fileNesting.patterns": {
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.ts": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
+    "tsconfig.json": "tsconfig.*.json"
+  },
+  "explorer.incrementalNaming": "smart",
+  "explorer.openEditors.minVisible": 0,
+  "explorer.openEditors.visible": 4,
+  "explorer.sortOrderLexicographicOptions": "default",
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.closeExtensionDetailsOnViewChange": true,
+  "files.associations": {
+    "*.md": "markdown",
+    "*.php": "php"
+  },
+  "files.autoSave": "onWindowChange",
+  "files.enableTrash": true,
+  "files.insertFinalNewline": true,
+  "files.simpleDialog.enable": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "formattingToggle.affects": [
+    "editor.formatOnSave"
+  ],
+  "git.allowForcePush": true,
+  "git.autofetch": true,
+  "git.autorefresh": true,
+  "git.confirmSync": false,
+  "git.enableCommitSigning": false,
+  "git.enableSmartCommit": true,
+  "git.ignoreRebaseWarning": true,
+  "git.pruneOnFetch": true,
+  "gitmoji.showEmojiCode": true,
+  "intelephense.environment.phpVersion": "7.4.0",
+  "intelephense.telemetry.enabled": false,
+  "javascript.format.enable": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "markdown.occurrencesHighlight.enabled": true,
+  "mergeEditor.diffAlgorithm": "advanced",
+  "multiDiffEditor.experimental.enabled": true,
+  "oneDarkPro.bold": true,
+  "oneDarkPro.italic": true,
+  "oneDarkPro.vivid": false,
+  "php.suggest.basic": false,
+  "php.validate.enable": false,
+  "problems.showCurrentInStatus": true,
+  "python.defaultInterpreterPath": "/bin/python3",
+  "rest-client.enableTelemetry": false,
+  "rest-client.previewOption": "exchange",
+  "rest-client.requestNameAsResponseTabTitle": true,
+  "scm.diffDecorationsGutterPattern": {
+    "added": false,
+    "modified": false
+  },
+  "scm.diffDecorationsGutterWidth": 2,
+  "scm.inputMaxLines": 10,
+  "scm.repositories.visible": 3,
+  "screencastMode.fontSize": 40,
+  "screencastMode.keyboardOverlayTimeout": 1000,
+  "screencastMode.verticalOffset": 0,
+  "search.decorations.badges": false,
+  "search.maxResults": 25000,
+  "search.searchEditor.defaultNumberOfContextLines": null,
+  "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
+  "search.searchEditor.reusePriorSearchConfiguration": true,
+  "search.seedOnFocus": true,
+  "search.seedWithNearestWord": true,
+  "search.showLineNumbers": true,
+  "telemetry.telemetryLevel": "off",
+  "terminal.explorerKind": "both",
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "-workbench.action.terminal.findNext",
+    "-search.action.focusNextSearchResult",
+    "-workbench.action.debug.start"
+  ],
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.fontWeight": "450",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "icon": "terminal-bash",
+      "path": "bash"
+    },
+    "fish": {
+      "path": "fish"
+    },
+    "pwsh": {
+      "icon": "terminal-powershell",
+      "path": "pwsh"
+    },
+    "tmux": {
+      "icon": "terminal-tmux",
+      "path": "tmux"
+    },
+    "zsh": {
+      "path": "zsh"
+    }
+  },
+  "terminal.integrated.rightClickBehavior": "default",
+  "terminal.integrated.scrollback": 2500,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.stickyScroll.maxLineCount": 2,
+  "terminal.integrated.tabs.defaultColor": "terminal.ansiMagenta",
+  "terminal.integrated.tabs.defaultIcon": "terminal-linux",
+  "terminal.integrated.tabs.separator": " ➤ ",
+  "terminal.integrated.tabs.showActions": "always",
+  "terminal.integrated.tabs.showActiveTerminal": "always",
+  "terminal.integrated.tabs.title": "${local}${separator}${process}",
+  "todo-tree.filtering.ignoreGitSubmodules": true,
+  "todo-tree.general.statusBar": "total",
+  "todo-tree.highlights.enabled": true,
+  "typescript.format.enable": true,
+  "update.mode": "start",
+  "window.autoDetectHighContrast": false,
+  "window.commandCenter": false,
+  "window.customMenuBarAltFocus": true,
+  "window.density.editorTabHeight": "compact",
+  "window.dialogStyle": "custom",
+  "window.newWindowDimensions": "maximized",
+  "window.title": "${profileName}${separator}${rootName}${separator}${activeEditorMedium}${dirty}",
+  "window.titleSeparator": " ➤ ",
+  "workbench.activityBar.location": "top",
+  "workbench.commandPalette.experimental.suggestCommands": true,
+  "workbench.editor.autoLockGroups": {
+    "imagePreview.previewEditor": true,
+    "mainThreadWebview-markdown.preview": true,
+    "vscode.audioPreview": true,
+    "vscode.videoPreview": true,
+    "workbench.editorinputs.searchEditorInput": true
+  },
+  "workbench.editor.decorations.badges": false,
+  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "expand",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.enablePreviewFromCodeNavigation": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.excludeDirty": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 8,
+  "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.editor.preferHistoryBasedLanguageDetection": true,
+  "workbench.editor.restoreViewState": false,
+  "workbench.editor.revealIfOpen": true,
+  "workbench.editor.scrollToSwitchTabs": false,
+  "workbench.editor.sharedViewState": true,
+  "workbench.editor.showIcons": true,
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "workbench.editor.splitSizing": "auto",
+  "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.tabSizingFixedMaxWidth": 100,
+  "workbench.editor.tabSizingFixedMinWidth": 100,
+  "workbench.editor.untitled.labelFormat": "name",
+  "workbench.editorAssociations": {
+    "*.shyneko": "default"
+  },
+  "workbench.editorLargeFileConfirmation": 64,
+  "workbench.list.smoothScrolling": true,
+  "workbench.panel.opensMaximized": "preserve",
+  "workbench.preferredDarkColorTheme": "One Dark Pro",
+  "workbench.reduceMotion": "on",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.tree.enableStickyScroll": true,
+  "workbench.tree.indent": 16,
+  "workbench.tree.stickyScrollMaxItemCount": 7,
+  // "yaclock.prefix": "",
+  // "yaclock.priority": -1000,
+  "zenMode.showTabs": "none",
+  "zenMode.silentNotifications": true,
+  "workbench.colorTheme": "Tokyo Night",
+  "i18n-ally.ignoredLocales": [],
+  "editor.cursorWidth": 1,
+  "terminal.integrated.altClickMovesCursor": false,
+  "i18n-ally.annotationMaxLength": 20,
+  "i18n-ally.displayLanguage": "uk",
+  "i18n-ally.extract.keyMaxLength": 15,
+  "cSpell.userWords": [
+    "ch’entrate"
+  ],
+  "editor.minimap.enabled": false,
+  "window.customTitleBarVisibility": "auto",
+  "window.titleBarStyle": "custom",
+  "[nginx]": {
+    "editor.defaultFormatter": "raynigon.nginx-formatter"
+  },
+  "editor.stickyScroll.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "git.inputValidation": true,
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.suggest.shareSuggestSelections": true,
+  // VIM SUKA
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "lineBreakInsert"
+      ],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.experimental.showMoves": true
+  // "editor.tokenColorCustomizations": {
+  //   "textMateRules": [
+  //     {
+  //       "name": "italic font",
+  //       "scope": [
+  //         "comment",
+  //         "keyword",
+  //         "storage",
+  //         "keyword.control",
+  //         "keyword.control.from",
+  //         "keyword.control.flow",
+  //         "keyword.operator.new",
+  //         "keyword.control.import",
+  //         "keyword.control.export",
+  //         "keyword.control.default",
+  //         "keyword.control.trycatch",
+  //         "keyword.control.conditional",
+  //         "storage.type",
+  //         "storage.type.class",
+  //         "storage.modifier.tsx",
+  //         "storage.type.function",
+  //         "storage.modifier.async",
+  //         "variable.language",
+  //         "variable.language.this",
+  //         "variable.language.super",
+  //         "meta.class",
+  //         "meta.var.expr",
+  //         "constant.language.null",
+  //         "support.type.primitive",
+  //         "entity.name.method.js",
+  //         "entity.other.attribute-name",
+  //         "punctuation.definition.comment",
+  //         "text.html.basic entity.other.attribute-name",
+  //         "tag.decorator.js entity.name.tag.js",
+  //         "tag.decorator.js punctuation.definition.tag.js",
+  //         "source.js constant.other.object.key.js string.unquoted.label.js",
+  //       ],
+  //       "settings": {
+  //         "fontStyle": "italic",
+  //       }
+  //     },
+  //   ]
+  // }
+}
