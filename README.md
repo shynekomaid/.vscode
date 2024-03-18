@@ -16,6 +16,12 @@
       - [Load Settings](#load-settings)
       - [Load Settings Windows](#load-settings-windows)
         - [Load Settings Linux](#load-settings-linux)
+    - [Keybindings](#keybindings)
+      - [Save Keybindings Windows](#save-keybindings-windows)
+      - [Save Keybindings Linux](#save-keybindings-linux)
+      - [Load Keybindings Windows](#load-keybindings-windows)
+      - [Load Keybindings Linux](#load-keybindings-linux)
+  - [License](#license)
 
 ## Description
 
@@ -126,3 +132,53 @@ Load settings:
 ```bash
 cp settings/default.jsonp ~/.config/Code/User/settings.json
 ```
+
+### Keybindings
+
+#### Save Keybindings Windows
+
+```PowerShell
+copy %APPDATA%\Code\User\keybindings.json keybindings\default.jsonp
+```
+
+#### Save Keybindings Linux
+
+```bash
+cp ~/.config/Code/User/keybindings.json keybindings/default.jsonp
+```
+
+#### Load Keybindings Windows
+
+> Before running the command, make sure that you have a backup of your current keybindings.
+
+Backup your current keybindings:
+
+```PowerShell
+copy %APPDATA%\Code\User\keybindings.json %APPDATA%\Code\User\keybindings_backup.json
+```
+
+Load keybindings:
+
+```PowerShell
+copy keybindings\default.jsonp %APPDATA%\Code\User\keybindings.json
+```
+
+#### Load Keybindings Linux
+
+> Before running the command, make sure that you have a backup of your current keybindings.
+
+Backup your current keybindings:
+
+```bash
+cp ~/.config/Code/User/keybindings.json ~/.config/Code/User/keybindings_backup.json
+```
+
+Load keybindings:
+
+```bash
+cp keybindings/default.jsonp ~/.config/Code/User/keybindings.json
+```
+
+## License
+
+[MIT](LICENSE)
