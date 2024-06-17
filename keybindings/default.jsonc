@@ -15,12 +15,12 @@
     "command": "revealFileInOS"
   },
   {
-    "key": "ctrl+j",
+    "key": "ctrl+k",
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetVisible"
   },
   {
-    "key": "ctrl+k",
+    "key": "ctrl+j",
     "command": "selectNextSuggestion",
     "when": "suggestWidgetVisible"
   },
@@ -35,12 +35,12 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+j",
+    "key": "ctrl+k",
     "command": "workbench.action.quickOpenNavigatePrevious",
     "when": "inQuickOpen"
   },
   {
-    "key": "ctrl+k",
+    "key": "ctrl+j",
     "command": "workbench.action.quickOpenNavigateNext",
     "when": "inQuickOpen"
   },
@@ -54,20 +54,74 @@
     "when": "focusedView == 'workbench.scm'"
   },
   {
-    "key": "shift+alt+pagedown",
-    "command": "workbench.action.focusNextGroup"
-  },
-  {
     "key": "ctrl+enter",
     "command": "-github.copilot.generate",
     "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
   },
   {
-    "key": "ctrl+shift+alt+enter",
-    "command": "github.copilot.generate"
-  },
-  {
     "key": "scrolllock scrolllock",
     "command": "toggleVim"
+  },
+  {
+    "key": "ctrl+shift+insert",
+    "command": "workbench.action.toggleLockedScrolling"
+  },
+  {
+    "key": "alt+f12",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+f",
+    "command": "workbench.action.quickTextSearch"
+  },
+  // setxkbmap -option caps:none
+  {
+    "key": "capslock capslock",
+    "command": "vscode-easymotion.jumpToWord",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+k",
+    "command": "cursorUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "capslock enter",
+    "command": "cursorEnd",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+h",
+    "command": "cursorLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "cursorRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "capslock space",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "ctrl+alt+d",
+    "command": "sftp.diff.activeFile"
+  },
+  {
+    "key": "ctrl+alt+s",
+    "command": "sftp.upload.activeFile",
+    "when": "sftp.enabled"
+  },
+  {
+    "key": "ctrl+f6",
+    "command": "git.commit",
+    "when": "!operationInProgress"
   }
 ]

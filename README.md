@@ -90,13 +90,13 @@ cat extensions/default.txt | xargs -L 1 code --install-extension
 #### Save Settings Windows
 
 ```PowerShell
-copy %APPDATA%\Code\User\settings.json settings\default.jsonp
+copy %APPDATA%\Code\User\settings.json config\default.jsonp
 ```
 
 #### Save Settings Linux
 
 ```bash
-cp ~/.config/Code/User/settings.json settings/default.jsonp
+cp ~/.config/Code/User/settings.json config/default.jsonp
 ```
 
 #### Load Settings
@@ -114,7 +114,7 @@ copy %APPDATA%\Code\User\settings.json %APPDATA%\Code\User\settings_backup.json
 Load settings:
 
 ```PowerShell
-copy settings\default.jsonp %APPDATA%\Code\User\settings.json
+copy config\default.jsonp %APPDATA%\Code\User\settings.json
 ```
 
 ##### Load Settings Linux
@@ -130,7 +130,7 @@ cp ~/.config/Code/User/settings.json ~/.config/Code/User/settings_backup.json
 Load settings:
 
 ```bash
-cp settings/default.jsonp ~/.config/Code/User/settings.json
+cp config/default.jsonp ~/.config/Code/User/settings.json
 ```
 
 ### Keybindings
@@ -138,13 +138,13 @@ cp settings/default.jsonp ~/.config/Code/User/settings.json
 #### Save Keybindings Windows
 
 ```PowerShell
-copy %APPDATA%\Code\User\keybindings.json keybindings\default.jsonp
+copy %APPDATA%\Code\User\keybindings.json keybindings\default.jsonc
 ```
 
 #### Save Keybindings Linux
 
 ```bash
-cp ~/.config/Code/User/keybindings.json keybindings/default.jsonp
+cp ~/.config/Code/User/keybindings.json keybindings/default.jsonc
 ```
 
 #### Load Keybindings Windows
@@ -160,7 +160,7 @@ copy %APPDATA%\Code\User\keybindings.json %APPDATA%\Code\User\keybindings_backup
 Load keybindings:
 
 ```PowerShell
-copy keybindings\default.jsonp %APPDATA%\Code\User\keybindings.json
+copy keybindings\default.jsonc %APPDATA%\Code\User\keybindings.json
 ```
 
 #### Load Keybindings Linux

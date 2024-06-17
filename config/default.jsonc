@@ -45,7 +45,8 @@
   },
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.stickyScroll.defaultModel": "indentationModel"
   },
   "[python]": {
     "editor.rulers": [
@@ -54,43 +55,52 @@
     "editor.tabSize": 4
   },
   "accessibility.verbosity.notebook": false,
+  "codeium.enableCodeLens": "hide_x",
+  "codeium.enableConfig": {
+    "*": true,
+    "markdown": true,
+    "plaintext": true,
+    "properties": true
+  },
   "debug.console.closeOnEnd": true,
   "debug.toolBarLocation": "commandCenter",
   "diffEditor.diffAlgorithm": "advanced",
+  "diffEditor.experimental.showMoves": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.maxComputationTime": 30000,
   "diffEditor.renderSideBySideInlineBreakpoint": 1000,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.accessibilitySupport": "off",
-  "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.codeLensFontFamily": "Cascadia Code NF",
   "editor.colorDecoratorsActivatedOn": "click",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "off",
   "editor.cursorSurroundingLines": 3,
+  "editor.cursorWidth": 1,
   "editor.detectIndentation": true,
   "editor.experimental.asyncTokenization": true,
   "editor.fastScrollSensitivity": 5,
   "editor.find.autoFindInSelection": "multiline",
   // https://github.com/microsoft/cascadia-code
-  // https://github.com/ryanoasis/nerd-fonts/releases/latest#:~:text=CascadiaCode.zip
-  // https://monaspace.githubnext.com
-  // https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip?WT.mc_id=-blog-scottha
-  // Caskaydia Cove Nerd Font Complete
-  // Neon Argon Xenon Radon Krypton
-  "editor.fontFamily": "'Cascadia Mono', 'Monaspace Neon', 'Droid Sans Mono', 'monospace', monospace",
-  "editor.fontLigatures": "'calt', 'liga', 'dlig', 'onum', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
-  "editor.fontSize": 14,
+  // https://github.com/antievictionmappingproject/corporate-ownership-map/tree/master/client/src/styles/fonts
+  "editor.fontFamily": "Cascadia Code, Helvetica, Arial, monospace",
+  // "editor.fontFamily": "Cartograph CF, Helvetica, Arial, sans-serif",
+  "editor.fontLigatures": "'calt', 'liga', 'dlig', 'onum', 'ss01', 'ss02',  'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss20'",
+  "editor.fontSize": 15,
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": true,
   "editor.formatOnType": false,
   "editor.guides.bracketPairs": "active",
   "editor.guides.bracketPairsHorizontal": "active",
   "editor.guides.highlightActiveBracketPair": true,
+  "editor.inlineSuggest.suppressSuggestions": true,
   "editor.largeFileOptimizations": true,
   "editor.linkedEditing": true,
   "editor.matchBrackets": "always",
+  "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 80,
-  "editor.minimap.renderCharacters": false,
-  "editor.minimap.scale": 1,
-  "editor.minimap.side": "right",
+  "editor.minimap.size": "fit",
   "editor.mouseWheelScrollSensitivity": 1,
   "editor.occurrencesHighlight": "multiFile",
   "editor.overviewRulerBorder": true,
@@ -101,7 +111,6 @@
   "editor.renderFinalNewline": "on",
   "editor.renderLineHighlight": "line",
   "editor.renderLineHighlightOnlyWhenFocus": false,
-  "editor.renderWhitespace": "selection",
   "editor.rulers": [
     80
   ],
@@ -109,15 +118,60 @@
   "editor.scrollBeyondLastLine": true,
   "editor.selectionHighlight": true,
   "editor.smoothScrolling": false,
+  "editor.stickyScroll.maxLineCount": 7,
   "editor.stickyTabStops": true,
   "editor.suggest.insertMode": "replace",
   "editor.suggest.localityBonus": true,
   "editor.suggest.preview": true,
+  "editor.suggest.shareSuggestSelections": true,
   "editor.suggest.showDeprecated": false,
   "editor.suggest.showStatusBar": true,
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "italic font",
+        "scope": [
+          "comment",
+          "keyword",
+          "storage",
+          "keyword.control",
+          "keyword.control.from",
+          "keyword.control.flow",
+          "keyword.operator.new",
+          "keyword.control.import",
+          "keyword.control.export",
+          "keyword.control.default",
+          "keyword.control.trycatch",
+          "keyword.control.conditional",
+          "storage.type",
+          "storage.type.class",
+          "storage.modifier.tsx",
+          "storage.type.function",
+          "storage.modifier.async",
+          "variable.language",
+          "variable.language.this",
+          "variable.language.super",
+          "meta.class",
+          "meta.var.expr",
+          "constant.language.null",
+          "support.type.primitive",
+          "entity.name.method.js",
+          "entity.other.attribute-name",
+          "punctuation.definition.comment",
+          "text.html.basic entity.other.attribute-name",
+          "tag.decorator.js entity.name.tag.js",
+          "tag.decorator.js punctuation.definition.tag.js",
+          "source.js constant.other.object.key.js string.unquoted.label.js",
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+    ]
+  },
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.includeStrings": false,
   "editor.unicodeHighlight.invisibleCharacters": true,
@@ -151,11 +205,14 @@
   "explorer.sortOrderLexicographicOptions": "default",
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.closeExtensionDetailsOnViewChange": true,
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
   "files.associations": {
     "*.md": "markdown",
     "*.php": "php"
   },
-  "files.autoSave": "onWindowChange",
   "files.enableTrash": true,
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
@@ -171,8 +228,13 @@
   "git.enableCommitSigning": false,
   "git.enableSmartCommit": true,
   "git.ignoreRebaseWarning": true,
+  "git.inputValidation": true,
   "git.pruneOnFetch": true,
   "gitmoji.showEmojiCode": true,
+  "i18n-ally.annotationMaxLength": 20,
+  "i18n-ally.displayLanguage": "uk",
+  "i18n-ally.extract.keyMaxLength": 15,
+  "i18n-ally.ignoredLocales": [],
   "intelephense.environment.phpVersion": "7.4.0",
   "intelephense.telemetry.enabled": false,
   "javascript.format.enable": true,
@@ -183,11 +245,11 @@
   "multiDiffEditor.experimental.enabled": true,
   "oneDarkPro.bold": true,
   "oneDarkPro.italic": true,
-  "oneDarkPro.vivid": false,
   "php.suggest.basic": false,
   "php.validate.enable": false,
   "problems.showCurrentInStatus": true,
   "python.defaultInterpreterPath": "/bin/python3",
+  "redhat.telemetry.enabled": true,
   "rest-client.enableTelemetry": false,
   "rest-client.previewOption": "exchange",
   "rest-client.requestNameAsResponseTabTitle": true,
@@ -209,9 +271,9 @@
   "search.seedOnFocus": true,
   "search.seedWithNearestWord": true,
   "search.showLineNumbers": true,
-  "telemetry.telemetryLevel": "off",
   "terminal.explorerKind": "both",
   "terminal.integrated.allowChords": false,
+  "terminal.integrated.altClickMovesCursor": false,
   "terminal.integrated.commandsToSkipShell": [
     "-workbench.action.terminal.findNext",
     "-search.action.focusNextSearchResult",
@@ -220,6 +282,7 @@
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorWidth": 2,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.fontFamily": "Cascadia Code, monospace",
   "terminal.integrated.fontWeight": "450",
   "terminal.integrated.profiles.linux": {
     "bash": {
@@ -256,9 +319,63 @@
   "todo-tree.highlights.enabled": true,
   "typescript.format.enable": true,
   "update.mode": "start",
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.cursorStylePerMode.normal": "block-outline",
+  "vim.cursorStylePerMode.replace": "underline",
+  "vim.cursorStylePerMode.visual": "block",
+  // VIM SUKA
+  "vim.easymotion": true,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "after": [
+        "<Esc>"
+      ],
+      "before": [
+        "j",
+        "j"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "after": [
+        "d",
+        "d"
+      ],
+      "before": [
+        "<leader>",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "lineBreakInsert"
+      ],
+      "silent": true
+    }
+  ],
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
   "window.autoDetectHighContrast": false,
-  "window.commandCenter": false,
-  "window.customMenuBarAltFocus": true,
+  "window.customTitleBarVisibility": "auto",
   "window.density.editorTabHeight": "compact",
   "window.dialogStyle": "custom",
   "window.newWindowDimensions": "maximized",
@@ -302,9 +419,8 @@
   "workbench.editorLargeFileConfirmation": 64,
   "workbench.list.smoothScrolling": true,
   "workbench.panel.opensMaximized": "preserve",
-  "workbench.preferredDarkColorTheme": "One Dark Pro",
-  "workbench.reduceMotion": "on",
-  "workbench.startupEditor": "none",
+  "workbench.reduceMotion": "off",
+  "workbench.startupEditor": "newUntitledFile",
   "workbench.tips.enabled": false,
   "workbench.tree.enableStickyScroll": true,
   "workbench.tree.indent": 16,
@@ -313,131 +429,24 @@
   // "yaclock.priority": -1000,
   "zenMode.showTabs": "none",
   "zenMode.silentNotifications": true,
-  "workbench.colorTheme": "Tokyo Night",
-  "i18n-ally.ignoredLocales": [],
-  "editor.cursorWidth": 1,
-  "terminal.integrated.altClickMovesCursor": false,
-  "i18n-ally.annotationMaxLength": 20,
-  "i18n-ally.displayLanguage": "uk",
-  "i18n-ally.extract.keyMaxLength": 15,
-  "cSpell.userWords": [
-    "ch’entrate"
+  "settingsSync.keybindingsPerPlatform": false,
+  "editor.renderWhitespace": "trailing",
+  "settingsSync.ignoredSettings": [
+    "editor.fontSize"
   ],
-  "editor.minimap.enabled": false,
-  "window.customTitleBarVisibility": "auto",
+  "workbench.colorTheme": "Noctis Bordo",
+  "files.autoSave": "onWindowChange",
+  "files.autoSaveWhenNoErrors": true,
+  "sftp.warnWhenUploadingOverNewerFile": true,
+  "sftp.groupByHost": true,
+  "sftp.downloadWhenOpenInRemoteExplorer": true,
+  "editor.formatOnSave": true,
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "window.menuBarVisibility": "visible",
   "window.titleBarStyle": "custom",
   "[nginx]": {
     "editor.defaultFormatter": "raynigon.nginx-formatter"
   },
-  "editor.stickyScroll.enabled": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": true,
-    "scminput": false
-  },
-  "git.inputValidation": true,
-  "editor.inlineSuggest.suppressSuggestions": true,
-  "editor.suggest.shareSuggestSelections": true,
-  // VIM SUKA
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "<leader>",
-        "d"
-      ],
-      "after": [
-        "d",
-        "d"
-      ]
-    },
-    {
-      "before": [
-        "<C-n>"
-      ],
-      "commands": [
-        ":nohl"
-      ]
-    },
-    {
-      "before": [
-        "K"
-      ],
-      "commands": [
-        "lineBreakInsert"
-      ],
-      "silent": true
-    }
-  ],
-  "vim.leader": "<space>",
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-f>": false
-  },
-  // To improve performance
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
-  },
-  "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.hideUnchangedRegions.enabled": true,
-  "diffEditor.experimental.showMoves": true
-  // "editor.tokenColorCustomizations": {
-  //   "textMateRules": [
-  //     {
-  //       "name": "italic font",
-  //       "scope": [
-  //         "comment",
-  //         "keyword",
-  //         "storage",
-  //         "keyword.control",
-  //         "keyword.control.from",
-  //         "keyword.control.flow",
-  //         "keyword.operator.new",
-  //         "keyword.control.import",
-  //         "keyword.control.export",
-  //         "keyword.control.default",
-  //         "keyword.control.trycatch",
-  //         "keyword.control.conditional",
-  //         "storage.type",
-  //         "storage.type.class",
-  //         "storage.modifier.tsx",
-  //         "storage.type.function",
-  //         "storage.modifier.async",
-  //         "variable.language",
-  //         "variable.language.this",
-  //         "variable.language.super",
-  //         "meta.class",
-  //         "meta.var.expr",
-  //         "constant.language.null",
-  //         "support.type.primitive",
-  //         "entity.name.method.js",
-  //         "entity.other.attribute-name",
-  //         "punctuation.definition.comment",
-  //         "text.html.basic entity.other.attribute-name",
-  //         "tag.decorator.js entity.name.tag.js",
-  //         "tag.decorator.js punctuation.definition.tag.js",
-  //         "source.js constant.other.object.key.js string.unquoted.label.js",
-  //       ],
-  //       "settings": {
-  //         "fontStyle": "italic",
-  //       }
-  //     },
-  //   ]
-  // }
 }
