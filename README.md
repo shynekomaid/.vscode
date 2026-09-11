@@ -13,9 +13,8 @@
     - [Settings](#settings)
       - [Save Settings Windows](#save-settings-windows)
       - [Save Settings Linux](#save-settings-linux)
-      - [Load Settings](#load-settings)
       - [Load Settings Windows](#load-settings-windows)
-        - [Load Settings Linux](#load-settings-linux)
+      - [Load Settings Linux](#load-settings-linux)
     - [Keybindings](#keybindings)
       - [Save Keybindings Windows](#save-keybindings-windows)
       - [Save Keybindings Linux](#save-keybindings-linux)
@@ -25,11 +24,11 @@
 
 ## Description
 
-> Note: Windows commands are untested and written using Github Copilot.
+> Note: Windows commands are untested and written using GitHub Copilot.
 
-My vscode settings and extensions.
-In near future, I will add backup for another profiles.
-Each profile will has unique name. In this README, I will use `default` as a profile name.
+My VS Code settings, keybindings and extensions.
+In the near future, I will add backups for other profiles.
+Each profile will have a unique name. In this README, I will use `default` as a profile name.
 
 ### Extensions
 
@@ -62,6 +61,12 @@ Restore extensions:
 Get-Content extensions\default_backup.txt | ForEach-Object { code --uninstall-extension $_ }
 ```
 
+Install extensions:
+
+```PowerShell
+Get-Content extensions\default.txt | ForEach-Object { code --install-extension $_ }
+```
+
 #### Load Extensions Linux
 
 > Before running the command, make sure that you have a backup of your current extensions.
@@ -89,8 +94,8 @@ cat extensions/default.txt | xargs -L 1 code --install-extension
 
 #### Save Settings Windows
 
-```PowerShell
-copy %APPDATA%\Code\User\settings.json config\default.jsonp
+```cmd
+copy %APPDATA%\Code\User\settings.json config\default.jsonc
 ```
 
 #### Save Settings Linux
@@ -99,25 +104,23 @@ copy %APPDATA%\Code\User\settings.json config\default.jsonp
 cp ~/.config/Code/User/settings.json config/default.jsonc
 ```
 
-#### Load Settings
-
 #### Load Settings Windows
 
 > Before running the command, make sure that you have a backup of your current settings.
 
 Backup your current settings:
 
-```PowerShell
+```cmd
 copy %APPDATA%\Code\User\settings.json %APPDATA%\Code\User\settings_backup.json
 ```
 
 Load settings:
 
-```PowerShell
-copy config\default.jsonp %APPDATA%\Code\User\settings.json
+```cmd
+copy config\default.jsonc %APPDATA%\Code\User\settings.json
 ```
 
-##### Load Settings Linux
+#### Load Settings Linux
 
 > Before running the command, make sure that you have a backup of your current settings.
 
@@ -137,7 +140,7 @@ cp config/default.jsonc ~/.config/Code/User/settings.json
 
 #### Save Keybindings Windows
 
-```PowerShell
+```cmd
 copy %APPDATA%\Code\User\keybindings.json keybindings\default.jsonc
 ```
 
@@ -153,13 +156,13 @@ cp ~/.config/Code/User/keybindings.json keybindings/default.jsonc
 
 Backup your current keybindings:
 
-```PowerShell
+```cmd
 copy %APPDATA%\Code\User\keybindings.json %APPDATA%\Code\User\keybindings_backup.json
 ```
 
 Load keybindings:
 
-```PowerShell
+```cmd
 copy keybindings\default.jsonc %APPDATA%\Code\User\keybindings.json
 ```
 
@@ -176,7 +179,7 @@ cp ~/.config/Code/User/keybindings.json ~/.config/Code/User/keybindings_backup.j
 Load keybindings:
 
 ```bash
-cp keybindings/default.jsonp ~/.config/Code/User/keybindings.json
+cp keybindings/default.jsonc ~/.config/Code/User/keybindings.json
 ```
 
 ## License
