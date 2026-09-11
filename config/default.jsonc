@@ -1,13 +1,29 @@
 {
-    // @@ Usefull data
+    // @@ Useful data
     //
     // Fonts:
-    //   Cascadia Code: https://github.com/microsoft/cascadia-code
-    //   CaskaydiaCove NF: https://github.com/ryanoasis/nerd-fonts/releases/latest/download/CascadiaCode.zip
+    //   'Iosevka Neko Sans' - my personal Iosevka build.
+    //     Not published anywhere, you won't find it online,
+    //     and I don't want to share it.
+    //     If missing, VS Code silently falls back to the next
+    //     font in the list, so just replace it with any
+    //     monospace font you like.
+    //   Cascadia Code:
+    //     https://github.com/microsoft/cascadia-code
+    //   CaskaydiaCove NF:
+    //     https://github.com/ryanoasis/nerd-fonts/releases/latest/download/CascadiaCode.zip
     // Extensions:
-    //   prasadgk.breakpoint-enhancer - very usefull to see breakpoints when "editor.glyphMargin": false,
+    //   prasadgk.breakpoint-enhancer - very useful to see
+    //     breakpoints when "editor.glyphMargin": false,
     //
     // @@ HIDDEN SETTINGS
+    //
+    // VS Code may warn that some of the settings below
+    // don't exist / are unknown. Do not worry: they are
+    // real and they do work - they are simply not described
+    // in the settings schema. The editor only validates
+    // against the schema, so an "Unknown configuration
+    // setting" warning here is a false alarm.
     //
     // For working folding when:
     // "editor.folding": true and  "editor.showFoldingControls": "never",
@@ -106,6 +122,11 @@
     "editor.fontFamily": "'Iosevka Neko Sans', 'CaskaydiaCove NF', 'Cascadia Code', 'Fira Code'",
     "editor.fontLigatures": "'liga' 1,'calt' 1",
     // "editor.fontLigatures": "'liga' 1,'calt' 1,'frac' 1",
+    // Note: the 'frac' (fractions) ligature feature is
+    // quite unstable in many fonts - glyphs render
+    // inconsistently or break the layout - so it stays
+    // disabled here. Only enable it if you know your font
+    // handles 'frac' reliably.
     "editor.inlineSuggest.fontFamily": "'Iosevka Neko Sans', 'CaskaydiaCove NF', 'Cascadia Code', 'Fira Code'",
     //
     // @@ Editor Suggestions & IntelliSense & Files
@@ -627,4 +648,7 @@
     "vscplus.statusBar.formatButton.triggers": [
         "onSave"
     ],
+    //
+    // WILD NATURE/TEST SETTINGS HERE
+    //
 }
