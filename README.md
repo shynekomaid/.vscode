@@ -96,7 +96,7 @@ copy %APPDATA%\Code\User\settings.json config\default.jsonp
 #### Save Settings Linux
 
 ```bash
-cp ~/.config/Code/User/settings.json config/default.jsonp
+cp ~/.config/Code/User/settings.json config/default.jsonc
 ```
 
 #### Load Settings
@@ -130,7 +130,7 @@ cp ~/.config/Code/User/settings.json ~/.config/Code/User/settings_backup.json
 Load settings:
 
 ```bash
-cp config/default.jsonp ~/.config/Code/User/settings.json
+cp config/default.jsonc ~/.config/Code/User/settings.json
 ```
 
 ### Keybindings
