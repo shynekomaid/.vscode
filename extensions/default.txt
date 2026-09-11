@@ -2,11 +2,10 @@ aaron-bond.better-comments
 adpyke.vscode-sql-formatter
 ahmadalli.vscode-nginx-conf
 ahmadawais.shades-of-purple
-alefragnani.bookmarks
 arjun.swagger-viewer
 bmewburn.vscode-intelephense-client
 bruno-api-client.bruno
-codeium.codeium
+catppuccin.catppuccin-vsc
 codezombiech.gitignore
 cweijan.vscode-autohotkey-plus
 dart-code.dart-code
@@ -31,7 +30,7 @@ jameslan.yaclock
 jdinhlife.gruvbox
 kevinrose.vsc-python-indent
 liviuschera.noctis
-lizebang.bash-extension-pack
+local.omarchy-theme
 lokalise.i18n-ally
 mads-hartmann.bash-ide-vscode
 mathcale.theme-dracula-refined
@@ -54,6 +53,7 @@ ms-vscode.hexeditor
 mtxr.sqltools
 pomdtr.excalidraw-editor
 raynigon.nginx-formatter
+redhat.vscode-xml
 redhat.vscode-yaml
 ritwickdey.liveserver
 rogalmic.bash-debug
@@ -69,7 +69,6 @@ tombonnike.vscode-status-bar-format-toggle
 tomoki1207.pdf
 visualstudioexptteam.intellicode-api-usage-examples
 visualstudioexptteam.vscodeintellicode
-vscodevim.vim
 waderyan.gitblame
 william-voyek.vscode-nginx
 xabikos.javascriptsnippets
