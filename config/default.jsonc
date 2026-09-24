@@ -582,6 +582,16 @@
     "errorLens.gutterIconsEnabled": false,
     "errorLens.padding": "70",
     "errorLens.delay": 500,
+    "errorLens.alignMessage": {
+        "start": 0,
+        "end": 0,
+        "minimumMargin": 4,
+        "padding": [
+            0,
+            0
+        ],
+        "useFixedPosition": true
+    },
     //
     // HTML formatting
     //
