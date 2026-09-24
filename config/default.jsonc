@@ -31,12 +31,12 @@
     // Fix long render time on minificated files
     "editor.stopRenderingLineAfter": 128,
     //
-    // @@ Editor Core Settingst
+    // @@ Editor Core Settings
+    //
     "editor.lineHeight": 1.618,
     "editor.lineNumbers": "off",
     "editor.defaultColorDecorators": "never",
     "editor.fontWeight": "normal",
-    "editor.formatOnSave": true,
     "editor.formatOnType": false,
     "editor.formatOnPaste": false,
     "editor.overviewRulerBorder": false,
@@ -228,6 +228,7 @@
     "window.titleSeparator": " / ",
     "window.density.editorTabHeight": "compact",
     "workbench.iconTheme": "bearded-icons",
+    "workbench.colorTheme": "Bearded Theme feat. Will",
     "workbench.productIconTheme": "Default",
     "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
     "workbench.editor.decorations.badges": false,
@@ -304,13 +305,13 @@
     "zenMode.showTabs": "none",
     "zenMode.silentNotifications": true,
     "zenMode.centerLayout": true,
-    "workbench.colorTheme": "Bearded Theme feat. Will",
     "workbench.browser.sendElementsToChat.attachImages": false,
     "workbench.experimental.modernUIUppercaseViewHeaders": true,
     //
     // @@ Chat & GitHub Copilot
     //
     "chat.agent.sandbox.enabled": "off",
+    "chat.agent.maxRequests": 100,
     "chat.agentHost.byokModels.enabled": true,
     "chat.byokUtilityModelDefault": "mainAgent",
     "chat.editor.wordWrap": "on",
@@ -516,7 +517,7 @@
         "editor.tabSize": 4,
     },
     "[sql]": {
-        "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
+        "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode",
     },
     "[xml]": {
         "editor.defaultFormatter": "mikeburgh.xml-format",
@@ -581,6 +582,16 @@
     "errorLens.gutterIconsEnabled": false,
     "errorLens.padding": "70",
     "errorLens.delay": 500,
+    "errorLens.alignMessage": {
+        "start": 0,
+        "end": 0,
+        "minimumMargin": 4,
+        "padding": [
+            0,
+            0
+        ],
+        "useFixedPosition": true
+    },
     //
     // HTML formatting
     //
@@ -651,4 +662,5 @@
     //
     // WILD NATURE/TEST SETTINGS HERE
     //
+    "editor.formatOnSave": true,
 }
