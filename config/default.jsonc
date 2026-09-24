@@ -228,6 +228,7 @@
     "window.titleSeparator": " / ",
     "window.density.editorTabHeight": "compact",
     "workbench.iconTheme": "bearded-icons",
+    "workbench.colorTheme": "Bearded Theme feat. Will",
     "workbench.productIconTheme": "Default",
     "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
     "workbench.editor.decorations.badges": false,
@@ -304,13 +305,13 @@
     "zenMode.showTabs": "none",
     "zenMode.silentNotifications": true,
     "zenMode.centerLayout": true,
-    "workbench.colorTheme": "Bearded Theme feat. Will",
     "workbench.browser.sendElementsToChat.attachImages": false,
     "workbench.experimental.modernUIUppercaseViewHeaders": true,
     //
     // @@ Chat & GitHub Copilot
     //
     "chat.agent.sandbox.enabled": "off",
+    "chat.agent.maxRequests": 100,
     "chat.agentHost.byokModels.enabled": true,
     "chat.byokUtilityModelDefault": "mainAgent",
     "chat.editor.wordWrap": "on",
@@ -651,4 +652,5 @@
     //
     // WILD NATURE/TEST SETTINGS HERE
     //
+    "editor.formatOnSave": true,
 }
