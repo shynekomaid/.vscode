@@ -31,12 +31,12 @@
     // Fix long render time on minificated files
     "editor.stopRenderingLineAfter": 128,
     //
-    // @@ Editor Core Settingst
+    // @@ Editor Core Settings
+    //
     "editor.lineHeight": 1.618,
     "editor.lineNumbers": "off",
     "editor.defaultColorDecorators": "never",
     "editor.fontWeight": "normal",
-    "editor.formatOnSave": true,
     "editor.formatOnType": false,
     "editor.formatOnPaste": false,
     "editor.overviewRulerBorder": false,
