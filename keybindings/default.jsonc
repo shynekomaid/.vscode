@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaults
 [
   {
     "key": "ctrl+alt+pagedown",
@@ -49,37 +48,22 @@
     "command": "sftp.openConnectInTerminal"
   },
   {
-    "key": "`",
-    "command": "extension.showGitmoji",
-    "when": "focusedView == 'workbench.scm'"
-  },
-  {
     "key": "ctrl+enter",
     "command": "-github.copilot.generate",
     "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
-  },
-  {
-    "key": "scrolllock scrolllock",
-    "command": "toggleVim"
   },
   {
     "key": "ctrl+shift+insert",
     "command": "workbench.action.toggleLockedScrolling"
   },
   {
-    "key": "alt+f12",
+    "key": "shift+alt+f11",
     "command": "workbench.action.toggleMaximizedPanel",
-    "when": "terminalFocus"
+    "when": "panelVisible"
   },
   {
     "key": "ctrl+alt+f",
     "command": "workbench.action.quickTextSearch"
-  },
-  // setxkbmap -option caps:none
-  {
-    "key": "capslock capslock",
-    "command": "vscode-easymotion.jumpToWord",
-    "when": "editorTextFocus"
   },
   {
     "key": "alt+j",
@@ -92,11 +76,6 @@
     "when": "textInputFocus"
   },
   {
-    "key": "capslock enter",
-    "command": "cursorEnd",
-    "when": "textInputFocus"
-  },
-  {
     "key": "alt+h",
     "command": "cursorLeft",
     "when": "textInputFocus"
@@ -105,10 +84,6 @@
     "key": "alt+l",
     "command": "cursorRight",
     "when": "textInputFocus"
-  },
-  {
-    "key": "capslock space",
-    "command": "workbench.action.focusNextGroup"
   },
   {
     "key": "ctrl+alt+d",
@@ -123,5 +98,78 @@
     "key": "ctrl+f6",
     "command": "git.commit",
     "when": "!operationInProgress"
+  },
+  {
+    "key": "alt+q",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "alt+e",
+    "command": "cursorEnd",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+b",
+    "command": "cursorHome",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-editor.action.toggleScreenReaderAccessibilityMode",
+    "when": "accessibilityHelpIsShown"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "workbench.action.createTerminalEditor",
+    "when": "terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+alt+h",
+    "command": "workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "workbench.action.focusAboveGroup"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "workbench.action.focusBelowGroup"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+shift+f11",
+    "command": "workbench.action.maximizeEditorHideSidebar",
+    "when": "auxiliaryBarVisible || sideBarVisible || editorPartMultipleEditorGroups && !editorPartMaximizedEditorGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+alt+u",
+    "command": "sftp.sync.localToRemote"
   }
 ]
