@@ -169,7 +169,8 @@
     "files.autoGuessEncoding": true,
     "files.autoSaveWorkspaceFilesOnly": true,
     "files.insertFinalNewline": true,
-    "files.simpleDialog.enable": true,
+    // "files.simpleDialog.enable": true,
+    // For linux: install strata file manager of flea file manager
     //
     // @@ Search & Find
     //
@@ -315,9 +316,6 @@
     "chat.agentHost.byokModels.enabled": true,
     "chat.byokUtilityModelDefault": "mainAgent",
     "chat.editor.wordWrap": "on",
-    "chat.mcp.discovery.enabled": {
-        "windsurf": true
-    },
     "chat.mcp.gallery.enabled": true,
     "chat.tools.compressOutput.enabled": true,
     "chat.tools.terminal.autoApprove": {
@@ -326,6 +324,10 @@
     "chat.unifiedAgentsBar.enabled": true,
     "chat.viewProgressBadge.enabled": true,
     "chat.viewSessions.orientation": "stacked",
+    "chat.checkpoints.showFileChanges": true,
+    "chat.mcp.discovery.enabled": {
+        "copilot": true
+    },
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
@@ -663,4 +665,6 @@
     // WILD NATURE/TEST SETTINGS HERE
     //
     "editor.formatOnSave": true,
+    // "openchamber.opencodeBinary": "/home/shynekomaid/.opencode/bin/opencode",
+    // "openchamber.opencodeBinary": "/home/shynekomaid/.local/share/mise/installzs/opencode/latest/node_modules/.bin/opencode",
 }
